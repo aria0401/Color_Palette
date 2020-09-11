@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.colorwrapper {
+  margin: 2vw;
+}
+
+#selector {
+  width: 56px;
+}
+
+#input {
+  margin-top: 10vh;
+  margin-left: 5vw;
+}
+
+.viewer {
+  width: 200px;
+  height: 200px;
+  background-color: #8a0f84;
+  border-radius: 10%;
+}
+
+.valuesWrapper {
+  display: flex;
+}
+.col {
+  margin-right: 2vw;
+}
