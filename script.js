@@ -259,11 +259,10 @@ function showColorInBox(colors) {
     array.push(myHEX);
   });
 
-  document.querySelector(".box1 .viewer").style.backgroundColor = array[0];
-  document.querySelector(".box2 .viewer").style.backgroundColor = array[1];
-  document.querySelector(".box3 .viewer").style.backgroundColor = array[2];
-  document.querySelector(".box4 .viewer").style.backgroundColor = array[3];
-  document.querySelector(".box5 .viewer").style.backgroundColor = array[4];
+  let displays = document.querySelectorAll(".viewer");
+  for (let i = 0; i < 5; i++) {
+    displays[i].style.backgroundColor = array[i];
+  }
 }
 
 function showingTextHex(myRGB) {
@@ -273,12 +272,10 @@ function showingTextHex(myRGB) {
     let myHEX = rgbToHex(rgb);
     array.push(myHEX);
   });
-
-  document.querySelector(".box1 .hex").textContent = array[0];
-  document.querySelector(".box2 .hex").textContent = array[1];
-  document.querySelector(".box3 .hex").textContent = array[2];
-  document.querySelector(".box4 .hex").textContent = array[3];
-  document.querySelector(".box5 .hex").textContent = array[4];
+  let txtHEX = document.querySelectorAll(".hex");
+  for (let i = 0; i < 5; i++) {
+    txtHEX[i].textContent = array[i];
+  }
 }
 
 function showingTextHsl(HSL) {
@@ -290,11 +287,10 @@ function showingTextHsl(HSL) {
     let HSLvalue = `${h}, ${s}%, ${l}%`;
     array.push(HSLvalue);
   });
-  document.querySelector(".box1 .hsl").textContent = array[0];
-  document.querySelector(".box2 .hsl").textContent = array[1];
-  document.querySelector(".box3 .hsl").textContent = array[2];
-  document.querySelector(".box4 .hsl").textContent = array[3];
-  document.querySelector(".box5 .hsl").textContent = array[4];
+  let txtHSL = document.querySelectorAll(".hsl");
+  for (let i = 0; i < 5; i++) {
+    txtHSL[i].textContent = array[i];
+  }
 }
 
 function showingTextRgb(RGB) {
@@ -307,9 +303,8 @@ function showingTextRgb(RGB) {
     array.push(RGBvalue);
   });
 
-  document.querySelector(".box1 .rgb").textContent = array[0];
-  document.querySelector(".box2 .rgb").textContent = array[1];
-  document.querySelector(".box3 .rgb").textContent = array[2];
-  document.querySelector(".box4 .rgb").textContent = array[3];
-  document.querySelector(".box5 .rgb").textContent = array[4];
+  let txtRGB = document.querySelectorAll(".rgb");
+  for (let i = 0; i < 5; i++) {
+    txtRGB[i].textContent = array[i];
+  }
 }
