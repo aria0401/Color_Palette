@@ -19,7 +19,7 @@ section {
 .viewer {
   width: 200px;
   height: 200px;
-  background-color: #8a0f84;
+  /* background-color: #8a0f84; */
   border-radius: 10%;
 }
 
@@ -28,4 +28,21 @@ section {
 }
 .col {
   margin-right: 2vw;
+}
+
+.box1 .viewer {
+  background-color: #a217d9;
+}
+
+.box2 .viewer {
+  background-color: #c217d9;
+}
+.box3 .viewer {
+  background-color: #d917cf;
+}
+.box4 .viewer {
+  background-color: #d917af;
+}
+.box5 .viewer {
+  background-color: #d9178f;
 }
